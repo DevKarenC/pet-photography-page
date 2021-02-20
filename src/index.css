@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+}
+
+#content {
+  background: url("./images/home-background-cat-image.jpg") center no-repeat
+    fixed;
+  width: 100vw;
+  height: 100vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 2rem;
+  font-family: "Cormorant", serif;
+}
+
+h1 {
+  margin: 1.5rem auto;
+  flex: 1;
+  text-align: center;
+}
+
+.yours-truly {
+  display: inline-block;
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: 7px;
+  white-space: nowrap;
+}
+
+.yours-truly:after {
+  content: "";
+  display: block;
+  border: 1px solid #e0bae4;
+  margin: 0 auto 5px;
+}
+
+.pet-photography {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+nav {
+  flex: 1;
+  font-size: 1.25rem;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  padding-left: 0;
+}
+
+nav > ul > li {
+  border-bottom: 3px transparent solid;
+  cursor: pointer;
+  list-style: none;
+  letter-spacing: 2px;
+}
+
+nav > ul > li:hover {
+  border-bottom: 3px solid #e0bae4;
+}
+
+.home-text {
+  width: 70vw;
+  height: 25vh;
+  margin: auto;
+}
+
+h2 {
+  font-family: "Shippori Mincho", serif;
+  font-size: 4rem;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  margin: 2rem auto 0;
+}
+
+.home-text > p {
+  margin: 1rem 0;
+  width: 85%;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  color: #6d6d6d;
+}
+
+p > span {
+  font-weight: bold;
+}
