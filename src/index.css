@@ -5,6 +5,8 @@ body {
 #content {
   background: url("./images/home-background-cat-image.jpg") center no-repeat
     fixed;
+  /* background: url("./images/pricing-background-dog-image.jpg") center no-repeat
+    fixed; */
   width: 100vw;
   height: 100vh;
   -webkit-background-size: cover;
@@ -23,7 +25,7 @@ header {
 
 h1 {
   margin: 1.5rem auto;
-  flex: 1;
+  flex: 2;
   text-align: center;
 }
 
@@ -50,7 +52,7 @@ h1 {
 }
 
 nav {
-  flex: 1;
+  flex: 3;
   font-size: 1.25rem;
 }
 
@@ -73,7 +75,7 @@ nav > ul > li:hover {
 }
 
 .home-text {
-  width: 70vw;
+  width: 80vw;
   height: 25vh;
   margin: auto;
 }
@@ -88,7 +90,7 @@ h2 {
 
 .home-text > p {
   margin: 1rem 0;
-  width: 85%;
+  width: 75%;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1.25rem;
   letter-spacing: 1px;

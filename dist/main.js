@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/header */ \"./src/modules/header.js\");\n/* harmony import */ var _modules_home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/home */ \"./src/modules/home.js\");\n\n\n\nconst contentDiv = document.querySelector(\"#content\");\ncontentDiv.append((0,_modules_header__WEBPACK_IMPORTED_MODULE_0__.default)(), (0,_modules_home__WEBPACK_IMPORTED_MODULE_1__.default)());\n\n\n//# sourceURL=webpack://pet-photography-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/header */ \"./src/modules/header.js\");\n/* harmony import */ var _modules_home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/home */ \"./src/modules/home.js\");\n\n\n\nconst contentDiv = document.querySelector(\"#content\");\ncontentDiv.append((0,_modules_header__WEBPACK_IMPORTED_MODULE_0__.default)(), (0,_modules_home__WEBPACK_IMPORTED_MODULE_1__.default)());\n// contentDiv.append(appendHeader());\n\n\n//# sourceURL=webpack://pet-photography-page/./src/index.js?");
 
 /***/ }),
 
