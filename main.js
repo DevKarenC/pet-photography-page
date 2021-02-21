@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/header */ \"./src/modules/header.js\");\n/* harmony import */ var _modules_home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/home */ \"./src/modules/home.js\");\n\n\n\nconst contentDiv = document.querySelector(\"#content\");\ncontentDiv.append((0,_modules_header__WEBPACK_IMPORTED_MODULE_0__.default)(), (0,_modules_home__WEBPACK_IMPORTED_MODULE_1__.default)());\n// contentDiv.append(appendHeader());\n\n\n//# sourceURL=webpack://pet-photography-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/header */ \"./src/modules/header.js\");\n/* harmony import */ var _modules_home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/home */ \"./src/modules/home.js\");\n/* harmony import */ var _modules_pricing__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/pricing */ \"./src/modules/pricing.js\");\n\n\n\n\nconst contentDiv = document.querySelector(\"#content\");\n// contentDiv.append(appendHeader(), home());\ncontentDiv.append((0,_modules_header__WEBPACK_IMPORTED_MODULE_0__.default)(), (0,_modules_pricing__WEBPACK_IMPORTED_MODULE_2__.default)());\n\n\n//# sourceURL=webpack://pet-photography-page/./src/index.js?");
 
 /***/ }),
 
@@ -37,6 +37,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction home() {\n  const homeText = document.createElement(\"div\");\n  const h2 = document.createElement(\"h2\");\n  const p = document.createElement(\"p\");\n  const span = document.createElement(\"span\");\n\n  h2.textContent = \"A Flawless Moment.\";\n  span.textContent = \"Book a session today.\";\n  p.textContent =\n    \"We help you capture moments from today and create memories for a lifetime with your pet. Over 500 memories captured. Let your pet's true colors shine through. \";\n  p.append(span);\n  homeText.classList.add(\"home-text\");\n  homeText.append(h2, p);\n  return homeText;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (home);\n\n\n//# sourceURL=webpack://pet-photography-page/./src/modules/home.js?");
+
+/***/ }),
+
+/***/ "./src/modules/pricing.js":
+/*!********************************!*\
+  !*** ./src/modules/pricing.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction pricing() {\n  const pricingDiv = document.createElement(\"div\");\n  const prices = document.createElement(\"p\");\n  const indoorPrice = document.createElement(\"span\");\n  const outdoorPrice = document.createElement(\"span\");\n  const offerText = document.createElement(\"p\");\n\n  offerText.textContent = \"What We Offer\";\n  indoorPrice.textContent = \"Indoor Studios $499\";\n  outdoorPrice.textContent = \"Outdoors $599\";\n  prices.append(indoorPrice, outdoorPrice);\n  prices.classList.add(\"prices\");\n  pricingDiv.classList.add(\"pricing\");\n  pricingDiv.append(offerText, createCard(), prices);\n  return pricingDiv;\n}\n\nfunction createCard() {\n  const offer = document.createElement(\"div\");\n  const offerListWithImages = {\n    \"good-doggy.svg\": \"Lively and dedicated photo session up to 2 hours\",\n    \"dog-treat.svg\": \"Various toys, treats, and costumes for your pet\",\n    \"samples.svg\": \"Quality samples of photos for your best decision\",\n    \"online-gallery.svg\": \"Private, online gallery with 100 best images\",\n    \"camera.svg\": \"Seven professional photo prints with digital copies\",\n    \"memories.svg\": \"Lasting memories and adding colors to your moments\",\n  };\n  offer.classList.add(\"offer\");\n  for (const imgSource in offerListWithImages) {\n    const card = document.createElement(\"div\");\n    const cardImg = `<img src=\"../src/images/${imgSource}\" />`;\n    const cardDesc = `<p>${offerListWithImages[imgSource]}</p>`;\n    card.innerHTML += cardImg;\n    card.innerHTML += cardDesc;\n    card.classList.add(\"card\");\n    offer.append(card);\n  }\n  return offer;\n  //   offer.innerHTML += offerList.map((item) => `<li>${item}</li>`).join(\"\");\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (pricing);\n\n\n//# sourceURL=webpack://pet-photography-page/./src/modules/pricing.js?");
 
 /***/ })
 
