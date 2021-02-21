@@ -1,10 +1,12 @@
+/* || General Styles */
+
 body {
   margin: 0;
 }
 
 #content {
-  background: url("./images/home-background-cat-image.jpg") center no-repeat
-    fixed;
+  /* background: url("./images/home-background-cat-image.jpg") center no-repeat
+    fixed; */
   /* background: url("./images/pricing-background-dog-image.jpg") center no-repeat
     fixed; */
   width: 100vw;
@@ -14,6 +16,8 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+
+/* || Header */
 
 header {
   display: flex;
@@ -74,6 +78,8 @@ nav > ul > li:hover {
   border-bottom: 3px solid #e0bae4;
 }
 
+/* || Home */
+
 .home-text {
   width: 80vw;
   height: 25vh;
@@ -99,4 +105,68 @@ h2 {
 
 p > span {
   font-weight: bold;
+}
+
+/* || PRICING */
+
+.pricing {
+  /* width: 45vw;
+  height: 50vh;
+  margin: 10vh 0 0 10vw; */
+}
+
+.pricing > p {
+  display: flex;
+  flex-direction: column;
+  font-family: "Shippori Mincho", serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.offer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 40px;
+  font-family: "Shippori Mincho", serif;
+  font-size: 1.75rem;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 0 10vw;
+}
+
+.offer > p {
+  grid-area: text;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  width: 330px;
+  height: 300px;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+/* 
+.card:hover {
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.24);
+} */
+
+.card > img {
+  margin: 1rem auto 0;
+  width: 175px;
+  flex: 2;
+}
+
+.card > p {
+  font-size: 1.25rem;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  padding-top: 0.5rem;
+  margin: 1rem;
+  flex: 1;
 }
