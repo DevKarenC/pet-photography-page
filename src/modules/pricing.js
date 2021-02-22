@@ -41,7 +41,6 @@ function priceButtons() {
   price.classList.add("price-button");
   buttonsDiv.classList.add("buttons-div");
   buttonsDiv.append(price);
-
   return buttonsDiv;
 }
 

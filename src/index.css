@@ -143,18 +143,6 @@ p > span {
   text-align: center;
 }
 
-.offer-div {
-  /* display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  row-gap: 40px;
-  font-family: "Shippori Mincho", serif;
-  font-size: 1.75rem;
-  letter-spacing: 2px;
-  text-align: center;
-  margin: 0 10vw; */
-}
-
 .offer-line-div {
   display: flex;
   align-items: center;
@@ -191,31 +179,4 @@ p > span {
   font-size: 1.75rem;
   letter-spacing: 1px;
   font-weight: 700;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
-  width: 330px;
-  height: 300px;
-  border: 1px solid gray;
-  border-radius: 10px;
-}
-
-.card > img {
-  margin: 1rem auto 0;
-  width: 175px;
-  flex: 2;
-}
-
-.card > p {
-  font-size: 1.25rem;
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-align: center;
-  padding-top: 0.5rem;
-  margin: 1rem;
-  flex: 1;
 }
