@@ -4,11 +4,24 @@ body {
   margin: 0;
 }
 
-#content {
-  /* background: url("./images/home-background-cat-image.jpg") center no-repeat
-    fixed; */
-  /* background: url("./images/pricing-background-dog-image.jpg") center no-repeat
-    fixed; */
+/* || Background Images */
+
+.content {
+  background: url("./images/home-background-cat-image.jpg") center no-repeat
+    fixed;
+}
+
+.content-pricing {
+  background: url("./images/pricing-background-image.jpg") center no-repeat
+    fixed;
+}
+
+.content-contact {
+  /* background: url("./images/pricing-background-image.jpg") center no-repeat
+  fixed; */
+}
+
+.background {
   width: 100vw;
   height: 100vh;
   -webkit-background-size: cover;
@@ -20,10 +33,11 @@ body {
 /* || Header */
 
 header {
+  background-color: rgba(255, 255, 255, 0.5);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
   font-family: "Cormorant", serif;
 }
 
@@ -110,22 +124,27 @@ p > span {
 /* || PRICING */
 
 .pricing {
-  /* width: 45vw;
-  height: 50vh;
-  margin: 10vh 0 0 10vw; */
+  width: 45vw;
+  height: 70vh;
+  margin: 5vh 45vw 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px rgba(255, 255, 255, 0.1) solid;
+  border-radius: 5px;
 }
 
 .pricing > p {
   display: flex;
   flex-direction: column;
-  font-family: "Shippori Mincho", serif;
+  margin: 1.5rem auto;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 2rem;
-  letter-spacing: 2px;
+  font-weight: 700;
+  letter-spacing: 4px;
   text-align: center;
 }
 
-.offer {
-  display: grid;
+.offer-div {
+  /* display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   row-gap: 40px;
@@ -133,11 +152,45 @@ p > span {
   font-size: 1.75rem;
   letter-spacing: 2px;
   text-align: center;
-  margin: 0 10vw;
+  margin: 0 10vw; */
 }
 
-.offer > p {
-  grid-area: text;
+.offer-line-div {
+  display: flex;
+  align-items: center;
+  margin: 2% 5%;
+  background-color: #3c5366;
+  color: white;
+  height: 3rem;
+  border: 1px #3c5366 solid;
+  border-radius: 5px;
+}
+
+.offer-line-para {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding-left: 1rem;
+}
+
+.buttons-div {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem auto;
+}
+
+.price-button {
+  width: 275px;
+  height: 60px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: white;
+  margin: 0 2rem;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.75rem;
+  letter-spacing: 1px;
+  font-weight: 700;
 }
 
 .card {
@@ -149,10 +202,6 @@ p > span {
   border: 1px solid gray;
   border-radius: 10px;
 }
-/* 
-.card:hover {
-  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.24);
-} */
 
 .card > img {
   margin: 1rem auto 0;
