@@ -1,3 +1,5 @@
+import { PHONE_NUMBER, EMAIL, ADDRESS, BUSINESS_HOURS } from "../constants";
+
 function contacts() {
   const contactDiv = document.createElement("div");
   const contactListDiv = document.createElement("div");
@@ -20,7 +22,7 @@ function phoneContact() {
   const phoneDiv = document.createElement("div");
   phoneIcon.classList.add("fas", "fa-phone-alt");
   phoneDiv.classList.add("contact-inner-div");
-  phoneNumber.textContent = "746-864-7274";
+  phoneNumber.textContent = PHONE_NUMBER;
   phoneDiv.append(phoneIcon, phoneNumber);
   return phoneDiv;
 }
@@ -31,7 +33,7 @@ function emailContact() {
   const emailDiv = document.createElement("div");
   emailIcon.classList.add("far", "fa-paper-plane");
   emailDiv.classList.add("contact-inner-div");
-  emailAddress.textContent = "yourstruly@petphotography.com";
+  emailAddress.textContent = EMAIL;
   emailDiv.append(emailIcon, emailAddress);
   return emailDiv;
 }
@@ -42,7 +44,7 @@ function locationAddress() {
   const addressDiv = document.createElement("div");
   addressIcon.classList.add("fas", "fa-map-marker-alt");
   addressDiv.classList.add("contact-inner-div");
-  address.textContent = "2674 Parrish Avenue, Salinas, CA";
+  address.textContent = ADDRESS;
   addressDiv.append(addressIcon, address);
   return addressDiv;
 }
@@ -53,7 +55,7 @@ function businessHours() {
   const hoursDiv = document.createElement("div");
   hoursIcon.classList.add("far", "fa-clock");
   hoursDiv.classList.add("contact-inner-div");
-  businessHours.textContent = "9AM - 9PM (PST) Monday - Sunday";
+  businessHours.textContent = BUSINESS_HOURS;
   hoursDiv.append(hoursIcon, businessHours);
   return hoursDiv;
 }

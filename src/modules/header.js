@@ -1,3 +1,5 @@
+import { TABS } from "../constants";
+
 function appendHeader() {
   const header = document.createElement("header");
   const h1 = document.createElement("h1");
@@ -5,9 +7,8 @@ function appendHeader() {
   const span2 = document.createElement("span");
   const nav = document.createElement("nav");
   const ul = document.createElement("ul");
-  const tabs = ["HOME", "PRICING", "CONTACT"];
 
-  ul.innerHTML = tabs.map((tab) => `<li>${tab}</li>`).join("");
+  ul.innerHTML = TABS.map((tab) => `<li>${tab}</li>`).join("");
   nav.append(ul);
   span1.textContent = "YOURS TRULY";
   span2.textContent = "PET PHOTOGRAPHY";

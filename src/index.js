@@ -2,6 +2,7 @@ import appendHeader from "./modules/header";
 import home from "./modules/home";
 import pricing from "./modules/pricing";
 import contacts from "./modules/contacts";
+import { HOME, PRICING, CONTACT } from "./constants";
 
 const contentDiv = document.querySelector(".content");
 const header = appendHeader();
@@ -17,17 +18,18 @@ tabs.forEach((tab) => {
 });
 
 function changeTab() {
-  if (this.textContent === "HOME") {
+  const tabName = this.textContent;
+  if (tabName === HOME) {
     contentDiv.removeChild(contentDiv.lastChild);
     contentDiv.append(homePage);
     contentDiv.classList.remove("content-pricing");
     contentDiv.classList.add("content");
-  } else if (this.textContent === "PRICING") {
+  } else if (tabName === PRICING) {
     contentDiv.removeChild(contentDiv.lastChild);
     contentDiv.append(pricingPage);
     contentDiv.classList.remove("content");
     contentDiv.classList.add("content-pricing");
-  } else if (this.textContent === "CONTACT") {
+  } else if (tabName === CONTACT) {
     contentDiv.removeChild(contentDiv.lastChild);
     contentDiv.append(contactPage);
     contentDiv.classList.remove("content", "content-pricing");
