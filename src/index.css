@@ -16,11 +16,6 @@ body {
     fixed;
 }
 
-.content-contact {
-  /* background: url("./images/pricing-background-image.jpg") center no-repeat
-  fixed; */
-}
-
 .background {
   width: 100vw;
   height: 100vh;
@@ -58,7 +53,7 @@ h1 {
 .yours-truly:after {
   content: "";
   display: block;
-  border: 1px solid #e0bae4;
+  border: 1px solid #6854de;
   margin: 0 auto 5px;
 }
 
@@ -89,7 +84,7 @@ nav > ul > li {
 }
 
 nav > ul > li:hover {
-  border-bottom: 3px solid #e0bae4;
+  border-bottom: 3px solid #6854de;
 }
 
 /* || Home */
@@ -121,9 +116,12 @@ p > span {
   font-weight: bold;
 }
 
-/* || PRICING */
+/* || Pricing Page */
 
 .pricing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 45vw;
   height: 70vh;
   margin: 5vh 45vw 0;
@@ -157,7 +155,6 @@ p > span {
 .offer-line-para {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1.25rem;
-  font-weight: 600;
   letter-spacing: 1px;
   padding-left: 1rem;
 }
@@ -179,4 +176,69 @@ p > span {
   font-size: 1.75rem;
   letter-spacing: 1px;
   font-weight: 700;
+}
+
+/* || Contact Page */
+
+.contact-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #4e28c1;
+  color: white;
+  height: 55%;
+  padding: 1rem;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.contact-div > p {
+  margin: 3rem 0 4rem 0;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.contact-inner-div {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  height: 55px;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.contact-inner-div > p {
+  margin-left: 1rem;
+  letter-spacing: 2px;
+}
+
+.far,
+.fas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fa949d;
+  border: 1px solid white;
+  border-radius: 50%;
+  background: white;
+  width: 50px;
+  height: 50px;
+}
+
+.fa-phone-alt::before {
+  width: 24px;
+}
+
+.fa-paper-plane::before {
+  padding-right: 3px;
+  padding-bottom: 1px;
+}
+
+.fa-map-marker-alt::before {
+  width: 19px;
+}
+
+.fa-clock::before {
+  width: 24px;
 }
