@@ -1,0 +1,244 @@
+/* || General Styles */
+
+body {
+  margin: 0;
+}
+
+/* || Background Images */
+
+.content {
+  background: url("./images/home-background-cat-image.jpg") center no-repeat
+    fixed;
+}
+
+.content-pricing {
+  background: url("./images/pricing-background-image.jpg") center no-repeat
+    fixed;
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* || Header */
+
+header {
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1rem;
+  font-family: "Cormorant", serif;
+}
+
+h1 {
+  margin: 1.5rem auto;
+  flex: 2;
+  text-align: center;
+}
+
+.yours-truly {
+  display: inline-block;
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: 7px;
+  white-space: nowrap;
+}
+
+.yours-truly:after {
+  content: "";
+  display: block;
+  border: 1px solid #6854de;
+  margin: 0 auto 5px;
+}
+
+.pet-photography {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+nav {
+  flex: 3;
+  font-size: 1.25rem;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  padding-left: 0;
+}
+
+nav > ul > li {
+  border-bottom: 3px transparent solid;
+  cursor: pointer;
+  list-style: none;
+  letter-spacing: 2px;
+}
+
+nav > ul > li:hover {
+  border-bottom: 3px solid #6854de;
+}
+
+/* || Home */
+
+.home-text {
+  width: 80vw;
+  height: 25vh;
+  margin: auto;
+}
+
+h2 {
+  font-family: "Shippori Mincho", serif;
+  font-size: 4rem;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  margin: 2rem auto 0;
+}
+
+.home-text > p {
+  margin: 1rem 0;
+  width: 75%;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  color: #6d6d6d;
+}
+
+p > span {
+  font-weight: bold;
+}
+
+/* || Pricing Page */
+
+.pricing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45vw;
+  height: 70vh;
+  margin: 5vh 45vw 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px rgba(255, 255, 255, 0.1) solid;
+  border-radius: 5px;
+}
+
+.pricing > p {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem auto;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.offer-line-div {
+  display: flex;
+  align-items: center;
+  margin: 2% 5%;
+  background-color: #3c5366;
+  color: white;
+  height: 3rem;
+  border: 1px #3c5366 solid;
+  border-radius: 5px;
+}
+
+.offer-line-para {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  padding-left: 1rem;
+}
+
+.buttons-div {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem auto;
+}
+
+.price-button {
+  width: 275px;
+  height: 60px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: white;
+  margin: 0 2rem;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.75rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+/* || Contact Page */
+
+.contact-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #4e28c1;
+  color: white;
+  height: 55%;
+  padding: 1rem;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.contact-div > p {
+  margin: 3rem 0 4rem 0;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.contact-inner-div {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  height: 55px;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.contact-inner-div > p {
+  margin-left: 1rem;
+  letter-spacing: 2px;
+}
+
+.far,
+.fas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fa949d;
+  border: 1px solid white;
+  border-radius: 50%;
+  background: white;
+  width: 50px;
+  height: 50px;
+}
+
+.fa-phone-alt::before {
+  width: 24px;
+}
+
+.fa-paper-plane::before {
+  padding-right: 3px;
+  padding-bottom: 1px;
+}
+
+.fa-map-marker-alt::before {
+  width: 19px;
+}
+
+.fa-clock::before {
+  width: 24px;
+}
