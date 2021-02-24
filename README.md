@@ -21,4 +21,4 @@ Check out the website [here](https://devkarenc.github.io/pet-photography-page/).
 
 ## Contact 🐾
 
-<img src="src/readme-images/Contact.png" alt="Demo screenshot for the Contact page" width="800px">
+<img src="src/readme-images/Contact.png" alt="Demo screenshot for the Contact page" width="800px" border="1px solid gray">
